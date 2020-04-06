@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Criativa</title>
+    <style>
+        body{
+            background: rgb(235, 232, 232);
+            color: rgb(12, 12, 12);
+            text-align: center;
+        }
+
+        button{
+            border: none;
+            background: none;
+            color: blue;
+        }
+
+        .botao{
+            background: blue;
+            font-weight: bold;
+            color: white;
+        }
+
+        p{font-size: 16px;}
+
+        #social a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Casa Criativa</h1>
+
+    <p>
+        Fica em casa em periodos longos
+        não deve ser nada fácil
+    </p>
+    <p>
+        Por isso, iremos catalogar ideias,
+        <strong>brincadeiras, jogos, filmes, livros,
+        cursos, dicas </strong>e tudo o que for
+        necessário para tornar esse momento mais interessante
+    </p>
+    <p>
+        Comece clicando em <a href="">ver ideias</a> 
+        ou contribua adcionando a sua ideia 
+    </p>
+
+    <button>+ adcionar ideia</button>
+    <button class="botao">Ver ideias</button>
+
+    <p id="social">&AMP;<a href="https://github.com/Lucas-Lameira"> Lucas Lameira</a></p>
+
+    <script>
+         document.querySelector("button.botao").addEventListener("click", function(){
+            document.querySelector("#social").classList.toggle("hide")
+         });
+
+    </script>
+</body>
+</html>
