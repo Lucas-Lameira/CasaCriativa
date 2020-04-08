@@ -1,24 +1,139 @@
 body{
+    font-family: 'Montserrat', sans-serif;
+
     background: rgb(235, 232, 232);
     color: rgb(12, 12, 12);
-    text-align: center;
+
+    margin: 0;
+}
+
+a{
+    color: #FF6626;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+p, #description{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+
+
+/*DIV CONTAINER*/
+#container{
+    width: 85%;
+    max-width: 980px;
+
+    margin: 30px auto;
+
+    display: flex;
+}
+
+/*SECTION INTRO*/
+
+#intro{
+    width: 70%;
+    margin-right: 20px;
+}
+
+main{
+    margin: 30 0;
 }
 
 button{
+    
     border: none;
     background: none;
-    color: blue;
+    color: #FF6626;
+    
+    cursor: pointer;
+    
+    outline: none;
+    
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    
+}
+
+button:hover{
+    text-decoration: underline;
+}
+button.botao{
+    text-decoration: none;
 }
 
 .botao{
-    background: blue;
+    background: #FF6626;
     font-weight: bold;
     color: white;
+    margin-left: 20px;
+
+    width: 100px;
+    height: 40px;
+
+    border-radius: 5px;
+
+    box-shadow: 3px 1px 10px rgb(245, 153, 114);
 }
 
-p{font-size: 16px;}
 
-#social a{
+#buttons, footer{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer a{
     text-decoration: none;
     color: black;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #FF6626;
+    font-weight: bold;
+    transition: 0.4s;
+}
+/*SECTION LAST IDEAS*/
+
+.idea{
+    display: flex;
+    background: rgb(255, 255, 255);
+
+    margin-bottom: 25px;
+    padding: 30px;
+
+    box-shadow: 0px 4px 16px -8px;
+}
+
+.idea img{
+    width: 60px;
+    height: 60px;
+
+    margin-right: 30px;
+}
+
+.idea h3{
+    margin: 0;
+}
+
+.idea p{
+    margin: 8px 0;
+    color: rgb(255, 181, 112);
+}
+.idea .description{
+    margin: 15px 0;
 }
